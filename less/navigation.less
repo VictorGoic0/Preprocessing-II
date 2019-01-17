@@ -1,4 +1,11 @@
 .header-container {
+
+  h1 {
+    @media @mobile {
+      margin: 0 auto 20px auto;
+    }
+  }
+
   nav {
     width: 40%;
     display: flex;
@@ -6,6 +13,11 @@
     align-items: center;
     color: black;
     font-size: 1.6rem;
+
+    @media @mobile {
+      width: 100%;
+      justify-content: space-around;
+    }
 
     a {
       color: black;

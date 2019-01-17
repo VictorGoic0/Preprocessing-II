@@ -168,6 +168,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .header-container h1 {
+    margin: 0 auto 20px auto;
+  }
+}
 .header-container nav {
   width: 40%;
   display: flex;
@@ -175,6 +180,12 @@ img {
   align-items: center;
   color: black;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .header-container nav {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 .header-container nav a {
   color: black;
@@ -206,6 +217,17 @@ header .header-container {
   width: 800px;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  header .header-container {
+    flex-wrap: wrap;
+    width: 85%;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    width: 86%;
+  }
 }
 .home .top-content {
   border-bottom: 2px dashed #C0C0C0;

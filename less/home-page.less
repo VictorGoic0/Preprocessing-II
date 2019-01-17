@@ -11,10 +11,19 @@ header {
     width: 800px;
     display: flex;
     justify-content: space-between;
+
+    @media @mobile {
+      flex-wrap: wrap;
+      width: 85%;
+    }
   }
 }
 
 .home {
+
+  @media @mobile {
+    width: 86%;
+  }
 
   .top-content {
     border-bottom: 2px dashed @navigation-border;
