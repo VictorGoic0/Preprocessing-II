@@ -256,9 +256,20 @@ header .header-container {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-wrap: wrap;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+    margin: 0 10% 30px 10%;
+  }
 }
 .home .content-pick .btn {
   height: 40px;
@@ -273,4 +284,9 @@ header .header-container {
   cursor: pointer;
   border: 2px solid #6b1212;
   color: #6b1212;
+}
+@media (max-width: 500px) {
+  .home .content-pick .btn {
+    width: 100%;
+  }
 }
