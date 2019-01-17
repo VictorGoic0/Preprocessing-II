@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
 
-    @media @mobile {
+    @media @tablet {
       flex-wrap: wrap;
       width: 85%;
     }
@@ -21,7 +21,7 @@ header {
 
 .home {
 
-  @media @mobile {
+  @media @tablet {
     width: 86%;
   }
 
@@ -46,7 +46,7 @@ header {
       width: 48%;
       padding-right: 1%;
 
-      @media @mobile {
+      @media @tablet {
         padding: 0px;
         width: 100%;
       }
@@ -55,14 +55,20 @@ header {
     .img-content {
       width: 48%;
       padding-left: 1%;
+      display: flex;
 
-      @media @mobile {
+      @media @tablet {
         padding: 0px;
         width: 100%;
       }
 
       img {
         border-radius: 10px;
+
+        @media @tablet {
+            margin: 0 auto;
+            align-self: center;
+        }
       }
     }
   }
@@ -75,7 +81,7 @@ header {
       padding-left: 1%;
       padding-right: 0;
 
-      @media @mobile {
+      @media @tablet {
         order: 0;
         padding: 0px;
         width: 100%;
@@ -86,7 +92,7 @@ header {
       padding-right: 1%;
       padding-left: 0;
 
-      @media @mobile {
+      @media @tablet {
         order: 1;
         padding: 0px;
       }
@@ -97,12 +103,13 @@ header {
     width: 75%;
     margin: 0 auto 30px;
 
-    @media @mobile {
+    @media @tablet {
       width: 100%;
     }
 
     img {
       border-radius: 10px;
+      width: 100%;
     }
   }
 
@@ -112,7 +119,7 @@ header {
     display: flex;
     justify-content: space-between;
 
-    @media @mobile {
+    @media @tablet {
       flex-wrap: wrap;
     }
 
@@ -120,9 +127,11 @@ header {
       width: 30%;
       margin-bottom: 30px;
 
-      @media @mobile {
+      @media @tablet {
         width: 80%;
         margin: 0 10% 30px 10%;
+        display: flex;
+        flex-wrap: wrap;
       }
     }
 
