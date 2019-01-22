@@ -1,1 +1,23 @@
-// Mixins in here
+.custom-button(@width, @height, @color, @background-color) {
+  height: @height;
+  width: @width;
+  background-color: @background-color;
+  color: @color;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  border: 2px solid black;
+  &:hover {
+    cursor: pointer;
+    border: 2px solid #6b1212;
+    color: #6b1212;
+  }
+
+  @media @tablet {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  @media @mobile {
+    width: 100%;
+  }
+}

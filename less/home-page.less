@@ -1,4 +1,38 @@
+header {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  border-bottom: 2px dashed @navigation-border;
+  padding-bottom: 20px;
+  margin-top: 20px;
+
+  .header-container {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+
+    @media @tablet {
+      flex-wrap: wrap;
+      width: 85%;
+    }
+  }
+}
+
 .home {
+
+  @media @tablet {
+    width: 86%;
+  }
+
+  .top-content {
+    border-bottom: 2px dashed @navigation-border;
+    padding-bottom: 20px;
+
+    h2 {
+      padding-top: 20px;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
@@ -6,19 +40,35 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @tablet {
+        padding: 0px;
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      display: flex;
+
+      @media @tablet {
+        padding: 0px;
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
+
+        @media @tablet {
+            margin: 0 auto;
+            align-self: center;
+        }
       }
     }
   }
@@ -30,11 +80,22 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @tablet {
+        order: 0;
+        padding: 0px;
+        width: 100%;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @tablet {
+        order: 1;
+        padding: 0px;
+      }
     }
   }
 
@@ -42,8 +103,13 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @tablet {
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
+      width: 100%;
     }
   }
 
@@ -53,9 +119,24 @@
     display: flex;
     justify-content: space-between;
 
+    @media @tablet {
+      flex-wrap: wrap;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @tablet {
+        width: 80%;
+        margin: 0 10% 30px 10%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    .btn {
+      .custom-button(200px, 40px, white, #3fa5b5)
     }
   }
 }// home
